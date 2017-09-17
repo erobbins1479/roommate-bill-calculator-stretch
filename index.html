@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Roomie Owes How Much?</title>
+  </head>
+  <body>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h4 class="text-white">Collapsed content</h4>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <header class="navbar-brand"><h2>v2 Roomie Owes How Much?!</h2></header>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="col-sm-6">
+        <div class="card border-dark mb-3">
+
+          <h4 class="card-header text-center">
+            v2 Calculator
+          </h4>
+
+          <div class="card-body border-dark">
+            <form id="bill-calculator">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Rent Amount</label>
+                  <input type="number" class="form-control" id="enterRentAmount" placeholder="$" name="rentTotal">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Who Paid?</label>
+                  <input class="form-control" type="text" name="rentRM" placeholder="Enter Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Energy Amount</label>
+                  <input type="number" class="form-control" id="enterEnergyAmount" placeholder="$" name="energyTotal">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Who Paid?</label>
+                  <input class="form-control" type="text" name="energyRM" placeholder="Enter Name">
+                </div>
+                </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Internet Amount</label>
+                  <input type="number" class="form-control" id="enterInternetAmount" placeholder="$" name="internetTotal">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Who Paid?</label>
+                  <input class="form-control" type="text" name="internetRM" placeholder="Enter Name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Misc Expenses</label>
+                  <input type="number" class="form-control" id="enterMiscExpenses" placeholder="$" name="miscExpenses">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Who Paid?</label>
+                  <input class="form-control" type="text" name="miscRM" placeholder="Enter Name">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+          </div>
+
+          <div class="card-footer text-center border-dark">
+            <h4><output id="total" name="total"></output></h4>
+            <p id="trivia"></p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+      <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
